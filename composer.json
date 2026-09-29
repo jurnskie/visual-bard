@@ -1,0 +1,37 @@
+{
+    "name": "jurnskie/visual-bard",
+    "autoload": {
+        "psr-4": {
+            "Jurnskie\\VisualBard\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jurnskie\\VisualBard\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "statamic/cms": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Visual Bard",
+            "description": "Visual Bard addon"
+        },
+        "laravel": {
+            "providers": [
+                "Jurnskie\\VisualBard\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
